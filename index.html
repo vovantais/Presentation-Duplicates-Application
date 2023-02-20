@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Duplicates Application</title>
+
+    <meta
+      name="description"
+      content="A framework for easily creating beautiful presentations using HTML"
+    />
+    <meta name="author" content="Hakim El Hattab" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+            <img
+              src="./assets/Duplicate.jpg"
+              alt="Duplicate"
+              style="
+                height: 350px;
+                width: 700px;
+                margin: 0 auto 1rem auto;
+                background: transparent;
+              "
+              class="demo-l@go"
+            />
+          <h3>Duplicate package</h3>
+          <p>
+            <small
+              >Created by
+              <a href="https://github.com/vovantais" target="_blank">
+                Vladimir Gedeiko
+                <img
+                  src="./assets/github-icon.png"
+                  style="
+                    height: 30px;
+                    margin: 0 auto 4rem auto;
+                    background: transparent;
+                  " /></a
+            ></small>
+          </p>
+        </section>
+
+        <section>
+          <h2>Today i will present info</h2>
+          <ul>
+            <li class="fragment">About app</li>
+            <li class="fragment">Diagrams</li>
+            <li class="fragment">Appearance screenshots (examples)</li>
+            <li class="fragment">Requirements for the application</li>
+            <li class="fragment">Competitors in the market</li>
+            <li class="fragment">Estimation (approximate)</li>
+          </ul>
+        </section>
+
+        <section>
+          <section data-auto-animate>
+            <p
+              data-id="text-props"
+              style="
+                background: #555;
+                line-height: 1em;
+                letter-spacing: 0em;
+                margin-top: 130px;
+              "
+            >
+            About app
+            </p>
+          </section>
+          <section data-auto-animate>
+            <p
+              data-id="text-props"
+              style="
+                background: #555;
+                line-height: 3em;
+                letter-spacing: 0.2em;
+                margin-top: 130px;
+              "
+            >
+            About app
+            </p>
+          </section>
+          <img src="./assets/Managed-Packages.png" />
+        </section>
+
+        <section>
+          <h5>About app</h5>
+          <p style="font-size: 30px;">
+            The deduplication package is a manage package that gives you the ability to find duplicates in a Salesforce organization.
+          </p>
+          <p style="font-size: 30px;">
+            Deduplication package allows you to customize your deduplication scenario, filter the results of deduplication.
+          </p>
+          <p style="font-size: 30px;">
+            The package has 5 custom actions that can be triggered if there are duplicates in the organization.
+          </p>
+          <p style="font-size: 30px;">
+            Has the ability to upload and download deduplication scenario.
+          </p>
+          <p style="font-size: 30px;">
+            Has a logging system.
+          </p>
+          <p style="font-size: 30px;">
+            Differentiation into 2 types of users:
+            <ul>
+              <li style="list-style: none; font-size: 26px;">- A normal user with the ability to only view the Deduplication scenario</li>
+              <li style="list-style: none; font-size: 26px;">- User with full access to deduplication</li>
+            </ul>
+          </p>
+        </section>
+
+        <!-- Example of nested vertical slides -->
+        <section>
+          <section>
+            <h2>Types of deduplication actions</h2>
+          </section>
+          <section>
+            <h2>Types of deduplication actions</h2>
+            <ul>
+              <li class="fragment">Merge Fields</li>
+              <li class="fragment">Send Email</li>
+              <li class="fragment">Send Bell Notification</li>
+              <li class="fragment">Create Related Record</li>
+              <li class="fragment">Update Record</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section data-auto-animate>
+            <p
+            data-id="text-props"
+            style="
+              background: #555;
+              line-height: 1em;
+              letter-spacing: 0em;
+              margin-top: 130px;
+            "
+            >
+            Diagrams
+            </p>
+          </section>
+          <section data-auto-animate>
+            <p
+            data-id="text-props"
+            style="
+              background: #555;
+              line-height: 2em;
+              letter-spacing: 0.2em;
+              margin-top: 130px;
+            "
+            >
+            Diagrams
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <p>
+            For an illustrative example, now let's look at various diagrams.
+          </p>
+          <section data-auto-animate>
+            <ul>
+              <li>Object schema</li>
+              <li>Development-Process</li>
+              <li>Use-case</li>
+            </ul>
+          </section>
+          <section data-auto-animate>
+            <ul>
+              <li>Use-case</li>
+              <li>Development-Process</li>
+              <li>Object schema</li>
+            </ul>
+          </section>
+        </section>
+	
+        <section>
+          <h5>Object schema</h5>
+          <div>
+              <img src="./assets/schema.png" alt="schema" width="2000px" height="550px">
+          </div>
+        </section>
+
+        <section>
+          <h5>Development-Process</h5>
+          <div>
+              <img src="./assets/Development-Process.png" alt="Development-Process" width="1000px" height="400px">
+          </div>
+        </section>
+
+        <section>
+          <h5>Use-case</h5>
+          <div>
+              <img src="./assets/Use-case.png" alt="Use-case" width="2000px" height="550px">
+          </div>
+        </section>
+
+        <section>
+          <section data-auto-animate>
+            <p
+              data-id="text-props"
+              style="
+                background: #555;
+                line-height: 1em;
+                letter-spacing: 0em;
+                margin-top: 130px;
+              "
+            >
+            Appearance screenshots (examples)
+            </p>
+          </section>
+          <section data-auto-animate>
+            <p
+              data-id="text-props"
+              style="
+                background: #555;
+                line-height: 3em;
+                letter-spacing: 0.2em;
+                margin-top: 130px;
+              "
+            >
+            Appearance screenshots (examples)
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <h4>Appearance App</h4>
+          <a href="https://www.figma.com/file/d16E4AwTIBp0X0yik1yVoN/Duplication?node-id=0%3A1&t=l0mlxZb3gOAqioeR-0" target="_blank">examples</a>
+        </section>
+
+        <section>
+          <section data-auto-animate>
+            <p
+              data-id="text-props"
+              style="
+                background: #555;
+                line-height: 1em;
+                letter-spacing: 0em;
+                margin-top: 130px;
+              "
+            >
+            Requirements for the application
+            </p>
+          </section>
+          <section data-auto-animate>
+            <p
+              data-id="text-props"
+              style="
+                background: #555;
+                line-height: 3em;
+                letter-spacing: 0.2em;
+                margin-top: 130px;
+              "
+            >
+            Requirements for the application
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <h5>Requirements for implementation</h5>
+          <ul>
+            <li class="fragment" style="font-size: 25px;">Поиск дубликатов по критериям;</li>
+            <li class="fragment" style="font-size: 25px;" >Возможность добавления нового критерия поиска (не только equal or not equal);</li>
+            <li class="fragment" style="font-size: 25px;">Возможность поиска между разными объектами;</li>
+            <li class="fragment" style="font-size: 25px;">Возможность запуска как синхронно так и асинхронно;</li>
+            <li class="fragment" style="font-size: 25px;">Возможность осуществления операций с найденными дубликатами;</li>
+            <li class="fragment" style="font-size: 25px;">Все критерии полей, фильтров должна подтягиваться динамически (без какого либо хардкода полей или IDs);</li>
+            <li class="fragment" style="font-size: 25px;">Разграничение на 2 вида пользователей: 
+              - Обычный пользователь имеющий возможность только просматривать настройки
+              - Пользователь имеющий полный доступ к дедупликации
+            </li>
+            <li class="fragment" style="font-size: 25px;">Предусмотреть возможность хранения настроек (критериев) и переноса их между версиями пакета;</li>
+            <li class="fragment" style="font-size: 25px;">Система должна учитывать TimeZone пользователей также выходные и праздничные дни;</li>
+            <li class="fragment" style="font-size: 25px;">Разработка должна быть осуществлена пакетно;</li>
+            <li class="fragment" style="font-size: 25px;">Единое страница показывающая информацию по пакету. А именно количество найденных дубликатов по объектам и т.д.;</li>
+            <li class="fragment" style="font-size: 25px;">Предусмотрена система общего логирования;</li>
+          </ul>
+        </section>
+
+        <section>
+          <section data-auto-animate>
+            <p
+              data-id="text-props"
+              style="
+                background: #555;
+                line-height: 3em;
+                letter-spacing: 0.2em;
+                margin-top: 130px;
+              "
+            >
+            Competitors on Appexchange
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Competitors on Appexchange Pros and Cons</h2>
+            <p><a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N300000058vzKEAQ&tab=e" target="_blank">Duplicate Packages on Appexchange</a>
+              <img src="./assets/dupPac1.png" alt="dupPac1">
+            </p>
+          </section>
+          <section>
+            <h2>Pros:</h2>
+            <ul>
+              <li class="fragment">Free</li>
+              <li class="fragment">Support multiple languages</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Cons:</h2>
+            <ul>
+              <li class="fragment">Not a lot of standart objects (only leads, contacts, accounts)</li>
+              <li class="fragment">Not a lot of action only merge</li>
+              <li class="fragment">No ability to export and import Deduplication scenario</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Competitors on Appexchange Pros and Cons</h2>
+            <p><a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000G5tCPUAZ&tab=e" target="_blank">Duplicate Packages on Appexchange</a>
+              <img src="./assets/dupPac2.png" alt="dupPac2">
+            </p>
+          </section>
+          <section>
+            <h2>Pros:</h2>
+            <ul>
+              <li class="fragment">Totally free during the beta period.</li>
+              <li class="fragment">Find duplicates and generate duplicate reports with a few clicks.</li>
+              <li class="fragment">Scheduling</li>
+              <li class="fragment">Support multiple languages</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Cons:</h2>
+            <ul>
+              <li>Not free all time.</li>
+              <li class="fragment">Not a lot of action only merge, report, Scheduling, senEmail</li>
+              <li class="fragment">No ability to export and import Deduplication scenario</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Competitors on Appexchange Pros and Cons</h2>
+            <p><a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N30000004gHkoEAE&tab=d" target="_blank">Duplicate Packages on Appexchange</a>
+              <img src="./assets/dupPac3.png" alt="dupPac3">
+            </p>
+          </section>
+          <section>
+            <h2>Pros:</h2>
+            <ul>
+              <li class="fragment">AUTOMATE ON A SCHEDULE</li>
+              <li class="fragment">DELETE UNNECESSARY, STALE RECORDS</li>
+              <li class="fragment">DEDUPE IMPORT FILES (Mass import data and scan for duplicates, create new records, and update ones that already live in Salesforce.)</li>
+              <li class="fragment">CONNECT SYSTEMS VIA API (Shuttle data from your ERP through Cloudingo to Salesforce to leverage master data management systems.)</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Cons:</h2>
+            <ul>
+              <li class="fragment">Not free</li>
+              <li class="fragment">No ability to export and import Deduplication scenario</li>
+              <li class="fragment">Not such actions like sendEmail, Send Bell Notification, Create related record</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section data-background="#dddddd">
+            <h2>Finally, Estimation (approximate):</h2>
+            <a href="#" class="navigate-down">
+            </a>
+          </section>
+          <section
+            data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)"
+          >
+          <h5>Estimation with code review and test</h5>
+          <ul>
+            <li class="fragment" style="font-size: 25px;">Create Model Data (Obj, Fields, RecordTypes, Permissions, Tabs, Application, Connected App and so on) - 2-3 days</li>
+            <li class="fragment" style="font-size: 25px;">Creation of LWC components for the rendering of UI and validaion filters - 1.5 month</li>
+            <li class="fragment" style="font-size: 25px;">Creating logic search for duplicate on Apex + add logging - 1.5 month</li>
+            <li class="fragment" style="font-size: 25px;">Create logic for all actions - 1 month</li>
+            <li class="fragment" style="font-size: 25px;">Crete logic for transferring duplication settings between versions of the package - 2-3 weeks</li>
+            <li class="fragment" style="font-size: 25px;">Crete logic for Timezone users also take into account the weekend and holidays - 2 weeks</li>
+          </ul>
+          </section>
+          <section
+>
+        <div>
+          <h4>The total development time to a complete finished Application for search duplicates of 6 months</h4>
+          <a href="https://www.figma.com/file/d16E4AwTIBp0X0yik1yVoN/Duplication?node-id=0%3A1&t=l0mlxZb3gOAqioeR-0" target="_blank">Application</a>
+        </div> 
+        </section>
+
+        <section>
+          <h2>Your question?</h2>
+        </section>
+        
+        <section style="text-align: left;">
+          <h1>THE END</h1>
+          <h4>Thanks for attention</h4>
+        </section>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // Also available as an ES module, see:
+      // https://revealjs.com/initialization/
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealZoom,
+          RevealNotes,
+          RevealSearch,
+          RevealMarkdown,
+          RevealHighlight,
+        ],
+      });
+    </script>
+  </body>
+</html>
