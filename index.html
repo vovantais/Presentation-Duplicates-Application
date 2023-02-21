@@ -182,10 +182,12 @@
               <li>Object schema</li>
               <li>Development-Process</li>
               <li>Use-case</li>
+              <li>User-flow</li>
             </ul>
           </section>
           <section data-auto-animate>
             <ul>
+              <li>User-flow</li>
               <li>Use-case</li>
               <li>Development-Process</li>
               <li>Object schema</li>
@@ -208,9 +210,16 @@
         </section>
 
         <section>
+          <h5>User-flow</h5>
+          <div>
+              <img src="./assets/User-flow.png" alt="User-flow" width="1000px" height="400px">
+          </div>
+        </section>
+
+        <section>
           <h5>Use-case</h5>
           <div>
-              <img src="./assets/Use-case.png" alt="Use-case" width="2000px" height="550px">
+              <img src="./assets/Use-case.png" alt="Use-case" width="1000px" height="500px">
           </div>
         </section>
 
@@ -280,21 +289,20 @@
         <section>
           <h5>Requirements for implementation</h5>
           <ul>
-            <li class="fragment" style="font-size: 25px;">Поиск дубликатов по критериям;</li>
-            <li class="fragment" style="font-size: 25px;" >Возможность добавления нового критерия поиска (не только equal or not equal);</li>
-            <li class="fragment" style="font-size: 25px;">Возможность поиска между разными объектами;</li>
-            <li class="fragment" style="font-size: 25px;">Возможность запуска как синхронно так и асинхронно;</li>
-            <li class="fragment" style="font-size: 25px;">Возможность осуществления операций с найденными дубликатами;</li>
-            <li class="fragment" style="font-size: 25px;">Все критерии полей, фильтров должна подтягиваться динамически (без какого либо хардкода полей или IDs);</li>
-            <li class="fragment" style="font-size: 25px;">Разграничение на 2 вида пользователей: 
+            <li class="fragment" style="font-size: 26px;">Поиск дубликатов по критериям;</li>
+            <li class="fragment" style="font-size: 26px;">Возможность добавления нового критерия поиска (не только equal or not equal);</li>
+            <li class="fragment" style="font-size: 26px;">Возможность поиска между разными объектами;</li>
+            <li class="fragment" style="font-size: 26px;">Возможность запуска как синхронно так и асинхронно;</li>
+            <li class="fragment" style="font-size: 26px;">Возможность осуществления операций с найденными дубликатами;</li>
+            <li class="fragment" style="font-size: 26px;">Все критерии полей, фильтров должна подтягиваться динамически (без какого либо хардкода полей или IDs);</li>
+            <li class="fragment" style="font-size: 26px;">Разграничение на 2 вида пользователей: 
               - Обычный пользователь имеющий возможность только просматривать настройки
               - Пользователь имеющий полный доступ к дедупликации
             </li>
-            <li class="fragment" style="font-size: 25px;">Предусмотреть возможность хранения настроек (критериев) и переноса их между версиями пакета;</li>
-            <li class="fragment" style="font-size: 25px;">Система должна учитывать TimeZone пользователей также выходные и праздничные дни;</li>
-            <li class="fragment" style="font-size: 25px;">Разработка должна быть осуществлена пакетно;</li>
-            <li class="fragment" style="font-size: 25px;">Единое страница показывающая информацию по пакету. А именно количество найденных дубликатов по объектам и т.д.;</li>
-            <li class="fragment" style="font-size: 25px;">Предусмотрена система общего логирования;</li>
+            <li class="fragment" style="font-size: 26px;">Предусмотреть возможность хранения настроек (критериев) и переноса их между версиями пакета;</li>
+            <li class="fragment" style="font-size: 26px;">Разработка должна быть осуществлена пакетно;</li>
+            <li class="fragment" style="font-size: 26px;">Единое страница показывающая информацию по пакету. А именно количество найденных дубликатов по объектам и т.д.;</li>
+            <li class="fragment" style="font-size: 26px;">Предусмотрена система общего логирования;</li>
           </ul>
         </section>
 
@@ -401,18 +409,16 @@
           >
           <h5>Estimation with code review and test</h5>
           <ul>
-            <li class="fragment" style="font-size: 25px;">Create Model Data (Obj, Fields, RecordTypes, Permissions, Tabs, Application, Connected App and so on) - 2-3 days</li>
-            <li class="fragment" style="font-size: 25px;">Creation of LWC components for the rendering of UI and validaion filters - 1.5 month</li>
-            <li class="fragment" style="font-size: 25px;">Creating logic search for duplicate on Apex + add logging - 1.5 month</li>
-            <li class="fragment" style="font-size: 25px;">Create logic for all actions - 1 month</li>
-            <li class="fragment" style="font-size: 25px;">Crete logic for transferring duplication settings between versions of the package - 2-3 weeks</li>
-            <li class="fragment" style="font-size: 25px;">Crete logic for Timezone users also take into account the weekend and holidays - 2 weeks</li>
+            <li class="fragment" style="font-size: 26px;">Create Model Data (Obj, Fields, RecordTypes, Permissions, Tabs, Application, Connected App and so on) - 2-4 days</li>
+            <li class="fragment" style="font-size: 26px;">Creation of LWC components for the rendering of UI and validaion filters - 1.5 month</li>
+            <li class="fragment" style="font-size: 26px;">Creating logic search for duplicate on Apex + add logging - 2 month</li>
+            <li class="fragment" style="font-size: 26px;">Create logic for all actions - 1 month</li>
+            <li class="fragment" style="font-size: 26px;">Crete logic for transferring duplication settings between versions of the package - 2-3 weeks</li>
           </ul>
           </section>
-          <section
->
+          <section>
         <div>
-          <h4>The total development time to a complete finished Application for search duplicates of 6 months</h4>
+          <h4>The total development time to a complete finished Application for search duplicates of 5.5 - 6 months</h4>
           <a href="https://www.figma.com/file/d16E4AwTIBp0X0yik1yVoN/Duplication?node-id=0%3A1&t=l0mlxZb3gOAqioeR-0" target="_blank">Application</a>
         </div> 
         </section>
