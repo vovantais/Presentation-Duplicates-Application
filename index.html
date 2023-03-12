@@ -110,13 +110,10 @@
             Deduplication package allows you to customize your deduplication scenario, filter the results of deduplication.
           </p>
           <p style="font-size: 30px;">
-            The package has 5 custom actions(for MVP-1 3 actions) and that can be triggered if there are duplicates in the organization.
+            The package has 3 custom actions and that can be triggered if there are duplicates in the organization.
           </p>
           <p style="font-size: 30px;">
             Has the ability to upload and download deduplication scenario.
-          </p>
-          <p style="font-size: 30px;">
-            Has a logging system.
           </p>
           <p style="font-size: 30px;">
             Differentiation into 2 types of users:
@@ -135,11 +132,9 @@
           <section>
             <h2>Types of deduplication actions:</h2>
             <ul>
-              <li class="fragment">Merge Fields;</li>
               <li class="fragment">Send Email;</li>
-              <li class="fragment">Update Record;</li>
-              <li class="fragment">Send Bell Notification MVP-2;</li>
-              <li class="fragment">Create Related Record MVP-2;</li>
+              <li class="fragment">Merge Records;</li>
+              <li class="fragment">Update Records;</li>
             </ul>
           </section>
         </section>
@@ -198,7 +193,7 @@
         <section>
           <h5>Object schema</h5>
           <div>
-              <img src="./assets/schema.png" alt="schema" width="2000px" height="550px">
+              <img src="./assets/SCHEMA-OBJECT.jpg" alt="schema" width="2000px" height="550px">
           </div>
         </section>
 
@@ -212,14 +207,14 @@
         <section>
           <h5>User-flow</h5>
           <div>
-              <img src="./assets/User-flow.fix.png" alt="User-flow" width="1000px" height="400px">
+              <img src="./assets/User-flow.jpg" alt="User-flow" width="1000px" height="400px">
           </div>
         </section>
 
         <section>
           <h5>Use-case</h5>
           <div>
-              <img src="./assets/Use-case.png" alt="Use-case" width="1000px" height="500px">
+              <img src="./assets/Use-case.jpg" alt="Use-case" width="1000px" height="500px">
           </div>
         </section>
 
@@ -275,7 +270,7 @@
 
         <section>
           <h4>Actions page</h4>
-          <img src="./assets/actions.png" alt="actions">
+          <img src="./assets/actions.png" alt="actions" height="600px">
         </section>
 
         <section>
@@ -315,20 +310,20 @@
         <section>
           <h5>Requirements for implementation:</h5>
           <ul>
-            <li class="fragment" style="font-size: 26px;">Поиск дубликатов по критериям;</li>
-            <li class="fragment" style="font-size: 26px;">Возможность добавления нового критерия поиска (не только equal or not equal);</li>
-            <li class="fragment" style="font-size: 26px;">Возможность поиска между разными объектами;</li>
-            <li class="fragment" style="font-size: 26px;">Возможность запуска как синхронно так и асинхронно;</li>
-            <li class="fragment" style="font-size: 26px;">Возможность осуществления операций с найденными дубликатами;</li>
-            <li class="fragment" style="font-size: 26px;">Все критерии полей, фильтров должна подтягиваться динамически (без какого либо хардкода полей или IDs);</li>
-            <li class="fragment" style="font-size: 26px;">Разграничение на 2 вида пользователей: 
-              - Обычный пользователь имеющий возможность только просматривать настройки
-              - Пользователь имеющий полный доступ к дедупликации
+            <li class="fragment" style="font-size: 27px;">Search for duplicates by criteria;</li>
+            <li class="fragment" style="font-size: 27px;">The possibility of adding a new search criterion (not only Equal or Not Equal);</li>
+            <li class="fragment" style="font-size: 27px;">The possibility of searching between different objects;</li>
+            <li class="fragment" style="font-size: 27px;">The possibility of starting both synchronously and asynchronously;</li>
+            <li class="fragment" style="font-size: 27px;">The possibility of transactions with found duplicates;</li>
+            <li class="fragment" style="font-size: 27px;">All criteria of fields, filters should be pulled dynamically (without any hardcode of fields or IDS);</li>
+            <li class="fragment" style="font-size: 27px;">Detection of 2 types of users:
+              - An ordinary user has the opportunity to only view the settings
+              - user full access to deduplication
             </li>
-            <li class="fragment" style="font-size: 26px;">Предусмотреть возможность хранения настроек (критериев) и переноса их между версиями пакета;</li>
-            <li class="fragment" style="font-size: 26px;">Разработка должна быть осуществлена пакетно;</li>
-            <li class="fragment" style="font-size: 26px;">Единое страница показывающая информацию по пакету. А именно количество найденных дубликатов по объектам и т.д.;</li>
-            <li class="fragment" style="font-size: 26px;">Предусмотрена система общего логирования;</li>
+            <li class="fragment" style="font-size: 27px;">Provide for the possibility of storing settings (criteria) and transferring them between versions of the package;</li>
+            <li class="fragment" style="font-size: 27px;">The development should be carried out package;</li>
+            <li class="fragment" style="font-size: 27px;">A single page showing information on the package.Namely, the number of duplicates found on objects, etc.;</li>
+            <li class="fragment" style="font-size: 27px;">A general logistics system is provided;</li>
           </ul>
         </section>
 
@@ -502,7 +497,7 @@
             <ul>
               <li class="fragment">Not free;</li>
               <li class="fragment">No ability to export and import Deduplication scenario;</li>
-              <li class="fragment">Not such actions like sendEmail, Send Bell Notification, Create related record;</li>
+              <li class="fragment">Not such actions like sendEmail, (MVP-2 Send Bell Notification, Create related record);</li>
             </ul>
           </section>
         </section>
