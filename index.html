@@ -110,7 +110,7 @@
             Deduplication package allows you to customize your deduplication scenario, filter the results of deduplication.
           </p>
           <p style="font-size: 30px;">
-            The package has 2 custom actions and that can be triggered if there are duplicates in the organization.
+            The package has 3 custom actions and that can be triggered if there are duplicates in the organization.
           </p>
           <p style="font-size: 30px;">
             Has the ability to upload and download deduplication scenario.
@@ -134,6 +134,7 @@
             <ul>
               <li class="fragment">Send Email;</li>
               <li class="fragment">Update Records;</li>
+              <li class="fragment">Display duplicates;</li>
             </ul>
           </section>
         </section>
@@ -173,6 +174,9 @@
           </p>
           <section data-auto-animate>
             <ul>
+              <li>Search duplicates Acync;</li>
+              <li>Search duplicates Sync;</li>
+              <li>Search duplicates Server logic;</li>
               <li>User-flow;</li>
               <li>Use-case;</li>
               <li>Development-Process;</li>
@@ -185,6 +189,9 @@
               <li>Development-Process;</li>
               <li>Use-case;</li>
               <li>User-flow;</li>
+              <li>Search duplicates Acync;</li>
+              <li>Search duplicates Sync;</li>
+              <li>Search duplicates Server Logic;</li>
             </ul>
           </section>
         </section>
@@ -205,7 +212,7 @@
           </section>
           <section>
             <h2>Desk trello</h2>
-            <img src="./assets/trello.png" alt="trello" height="400px">
+            <img src="./assets/trello.png" alt="trello">
           </section>
           <section>
             <h2>Discord channel gitlab-ci/cd</h2>
@@ -223,7 +230,28 @@
         <section>
           <h5>Use-case</h5>
           <div>
-              <img src="./assets/Use-case.jpg" alt="Use-case" width="1000px" height="500px">
+              <img src="./assets/Use-case.drawio.png" alt="Use-case" width="1000px" height="500px">
+          </div>
+        </section>
+
+        <section>
+          <h5>Search duplicates Async</h5>
+          <div>
+            <img src="./assets/search-duplicates-async.png" alt="search-duplicates-acync" width="" height="600px">
+          </div>
+        </section>
+
+        <section>
+          <h5>Search duplicates Sync</h5>
+          <div>
+            <img src="./assets/search-duplicates-sync.png" alt="search-duplicates-sync" width="" height="600px">
+          </div>
+        </section>
+
+        <section>
+          <h5>Search duplicates Server Logic</h5>
+          <div>
+            <img src="./assets/search-duplicates-server-logic.png" alt="search-duplicates-server-logic" width="" height="600px">
           </div>
         </section>
 
@@ -264,28 +292,36 @@
             </p>
           </section>
           <section>
-            <h5>Scenario settings page for selecting objects and filter logic.</h5>
+            <h5>Scenario settings page for selecting objects.</h5>
             <p>
               <img src="./assets/base_scenario.png" alt="base_scenario">
             </p>
           </section>
           <section>
-            <h5>Setting conditions</h5>
+            <h6>Setting conditions</h6>
             <p>
-              <img src="./assets/filters-conditions.png" alt="filters-conditions">
+              <img src="/assets/filters-conditions.png" alt="filters-conditions">
             </p>
           </section>
           <section>
             <h5>Setting Filter Result</h5>
             <p>
-              <img src="./assets/filter-result.png" alt="filter-result">
+              <img src="/assets/filter-result.png" alt="filter-result">
             </p>
           </section>
         </section>
 
         <section>
           <h4>Actions page</h4>
-          <img src="./assets/actions.png" alt="actions" height="600px">
+          <p>
+            <img src="./assets/actions.png" alt="actions" height="600px">
+          </p>
+        </section>
+
+        <section>
+          <p>
+            <img src="./assets/action-component.png" alt="actions-component" height="600px">
+          </p>
         </section>
 
         <section>
@@ -353,7 +389,7 @@
                 margin-top: 130px;
               "
             >
-           Limits use package logic Fuzzy MVP-1
+            WHAT CAN BE DONE IN MPV-2
             </p>
           </section>
           <section data-auto-animate>
@@ -366,15 +402,9 @@
                 margin-top: 130px;
               "
             >
-            Limits use package logic Fuzzy MVP-1
+            WHAT CAN BE DONE IN MPV-2
             </p>
           </section>
-        </section>
-
-        <section>
-          <p>
-            <img src="./assets/package-limits.png" alt="package-limits">
-          </p>
         </section>
 
         <section>
@@ -383,91 +413,31 @@
             <li class="fragment" style="font-size: 28px">Adding a new search criterion(Fuzzy name, Fuzzy Phone and so on)</li>
             <li class="fragment" style="font-size: 28px">Additional actions(Send Bell Notification, Create Related Record, and so on)</li>
             <li class="fragment" style="font-size: 28px">Improvements UI and Stability package</li>
-            <li class="fragment" style="font-size: 28px">Node.js server - will collect all the records in the batch and send them to the service, where they will be processed and the result will be sent with duplicates;</li>
-            <li class="fragment" style="font-size: 28px">Node.js - General logging system of errors;</li>
-            <li class="fragment" style="font-size: 28px">Heroku - will host the server; <img src="./assets/heroky.png" width="850px" height="310px"> </li>
+            <li class="fragment" style="font-size: 28px">Node.js/Java server - will collect all the records in the batch and send them to the service, where they will be processed and the result will be sent with duplicates;</li>
+            <li class="fragment" style="font-size: 28px">Node.js/Java - General logging system of errors;</li>
+            <li class="fragment" style="font-size: 28px">Heroku or other - will host the server; <img src="./assets/heroky.png" width="850px" height="310px"> </li>
           </ul>
         </section> 
 
         <section>
-          <section data-auto-animate>
-            <p
-              data-id="text-props"
-              style="
-                background: #555;
-                line-height: 1em;
-                letter-spacing: 0em;
-                margin-top: 130px;
-              "
-            >
-           Limits use package logic Fuzzy MVP-2
-            </p>
-          </section>
-          <section data-auto-animate>
-            <p
-              data-id="text-props"
-              style="
-                background: #555;
-                line-height: 3em;
-                letter-spacing: 0.2em;
-                margin-top: 130px;
-              "
-            >
-            Limits use package logic Fuzzy MVP-2
-            </p>
-          </section>
+          <h6>How call manage package(Api)</h6>
+          <div style="  display: grid; grid-template-rows: repeat(2, 1fr); grid-template-columns: repeat(2, 1fr);">
+            <img src="./assets/using-manage-pack.png" alt="using-manage-pack" height="200px">
+            <img src="./assets/using-manage-package-2.png" alt="using-manage-pack-2" height="150px">
+            <img src="./assets/use-manage-pack-3.png" alt="using-manage-pack-3" height="150px">
+            <img src="./assets/Api-search.png" alt="Api-search">
+          </div>
         </section>
 
         <section>
-          <p>
-            <img src="./assets/packag-limits-node.png" alt="package-limits-node">
-          </p>
-        </section>
-
-        <section>
-          <section data-auto-animate>
-            <p
-              data-id="text-props"
-              style="
-                background: #555;
-                line-height: 1em;
-                letter-spacing: 0em;
-                margin-top: 130px;
-              "
-            >
-            Comparisons with standard Matching Rules
-            </p>
-          </section>
-          <section data-auto-animate>
-            <p
-              data-id="text-props"
-              style="
-                background: #555;
-                line-height: 3em;
-                letter-spacing: 0.2em;
-                margin-top: 130px;
-              "
-            >
-            Comparisons with standard Matching Rules
-            </p>
-          </section>
-        </section>
-
-        <section>
-          <h4> Comparisons with standard Matching Rules.</h4>
-          <section>
-            <ul>
-              <li class="fragment">No action to send email update record;</li>
-              <li class="fragment">There is no way to expand and customize;</li>
-              <li class="fragment">Cannot compare data between different objects;</li>
-              <li class="fragment">Limits on the number of rules for each object;</li>
-              <li class="fragment">Ugly UI;</li>
-              <li class="fragment">Not all standard objects;</li>
-              <li class="fragment">No possibility to export import rules;</li>
-              <li class="fragment">Not many conditions for comparison;</li>
-              <li class="fragment">Not working for all orgy asynchronously;</li>
-            </ul>
-          </section>
+          <h6>How to add new action</h6>
+          <ul>
+            <li class="fragment" style="font-size: 32px;">There is a custom meta type with mapping action name class.</li>
+            <li class="fragment" style="font-size: 32px;">In the Deduplication Action Item, create action fields.</li>
+            <li class="fragment" style="font-size: 32px;">Add action name to Deduplication Action object Action types: picklist.</li>
+            <li class="fragment" style="font-size: 32px;">If it is selected, then it will be taken with a custom metatype type by the name of the action class and the logic will be run on it.</li>
+            <li class="fragment" style="font-size: 32px;">Using the LWC extension, you can add your own tabs / pages to Application or dynamically render UI with json.</li>
+          </ul>
         </section>
 
         <section>
@@ -569,68 +539,9 @@
 
         <section>
           <section>
-            <table style="font-size: 19px;">
-              <thead>
-                <tr>
-                 <TH> Package </TH>
-                  <TH> Pross </TH>
-                  <TH> Cons </TH>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Duplicate Check for Salesforce</td>
-                  <td>- Easy to use simple UI; <br>- Support multiple languages in UI; <br>- Free untill 5000 records; </td>
-                  <td> - Restrictions on the number of rules and objects (the maximum number of duplicate rules at the facility is 5; the maximum number of fields that can be included in the rule of duplicates - 10 and so on); <BR>
-                    - High prices (200,000 Records- $ 4230) <BR>
-                    - insufficiently flexible rules<br>
-                    - No ability to export and import Deduplication scenario;
-                  </td>
-                </tr>
-                <tr>
-                  <td>No Duplicates</td>
-                  <td>- Flexible settings of the rules (possibility of setting up the threshold of convergence); <br>
-                    - High accuracy; <br>
-                    - Duplicate reports;<br>
-                  </td>
-                  <td>- High prices (8000$ for 1 Million); <br>
-                    - Requires examination in the configuration;<br>
-                    - Not Action Update Records;<br>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Cloudingo</td>
-                  <td>- Support for all types of objects; <br>
-                      - Many functions for comparing data; <br>
-                      - Real time check; <br>
-                      - Integration with Salesforce;<br>
-                  </td>
-                  <td>- Difficult interface; <br>
-                    - Low speed; <br>
-                    - Huge prices; (10.000$+ for full package and more)<br>
-                    - Not actions like sendEmail;<br>
-                    - No ability to export and import Deduplication scenario;
-                  </td>
-                </tr>
-                <tr>
-                  <td>My custom package</td>
-                  <td>
-                      - Easy to use simple UI; <br>
-                      - Ability to export and import Deduplication scenario; <br>
-                      - Support for all types of objects; <br>
-                      - Many functions for comparing data (possibility of setting up the threshold of convergence); <br>
-                      - Real time check; <br>
-                      - Cheap (free); <br>
-                      <br>
-                  </td>
-                  <td> - Have a Restrictions in symbols; <br>
-                    - Low speed; <br>
-                    - Not a lot of action;<br>
-                  </td>
-                </tr>
-              </tbody>
-            </table>   
+            <a href="https://docs.google.com/spreadsheets/d/1zn-f64wuCSNxqf4uLGrFW5E4-ofjHrJjGZX2ecnpBM8/edit#gid=1378418338" target="_blank">Compare competitors on Appexchange and Matching Rules Salesforce</a>
           </section>
+
           <section style="line-height: 42px;">
             <h4>Each of these packages has its own advantages and disadvantages:</h4>
             <ul>
@@ -670,7 +581,7 @@
           <h6 class="fragment"> 90 days for one person</h6>
           <a class="fragment" href="https://trello.com/b/bPLvRWSe/duplication" target="_blank" style="color: yellow;"> Trello Deduplication</a>
           </section>
-
+          
           <!-- <section>
           <div>
             <h5>If we do only core without all the feature (there will be only the main search on one object, without filters results,without import and export, and 1 action) estimate of 2-3 months.</h5>
@@ -713,5 +624,4 @@
       });
     </script>
   </body>
-</html>
-когда публикуется платформ ивент появляеться lwc компонент 
+</html> 
