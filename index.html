@@ -110,10 +110,13 @@
             Deduplication package allows you to customize your deduplication scenario, filter the results of deduplication.
           </p>
           <p style="font-size: 30px;">
-            The package has 3 custom actions and that can be triggered if there are duplicates in the organization.
+            The package has 2 custom actions and that can be triggered if there are duplicates in the organization.
           </p>
           <p style="font-size: 30px;">
             Has the ability to upload and download deduplication scenario.
+          </p>
+          <p style="font-size: 30px;">
+            Displays duplicates on lightning page.
           </p>
           <p style="font-size: 30px;">
             Differentiation into 2 types of users:
@@ -134,7 +137,6 @@
             <ul>
               <li class="fragment">Send Email;</li>
               <li class="fragment">Update Records;</li>
-              <li class="fragment">Display duplicates;</li>
             </ul>
           </section>
         </section>
@@ -176,7 +178,7 @@
             <ul>
               <li>Search duplicates Acync;</li>
               <li>Search duplicates Sync;</li>
-              <li>Search duplicates Server logic;</li>
+              <li>Search duplicates remote Server logic;</li>
               <li>User-flow;</li>
               <li>Use-case;</li>
               <li>Development-Process;</li>
@@ -191,15 +193,16 @@
               <li>User-flow;</li>
               <li>Search duplicates Acync;</li>
               <li>Search duplicates Sync;</li>
-              <li>Search duplicates Server Logic;</li>
+              <li>Search duplicates remote Server Logic(implementation MVP-2);</li>
             </ul>
           </section>
         </section>
 	
         <section>
           <h5>Object schema</h5>
+          <!-- TODO Add master detail field date of action completed -->
           <div>
-              <img src="./assets/SCHEMA-OBJECT.jpg" alt="schema" width="2000px" height="550px">
+              <img src="./assets/SCHEMA-OBJECT.png" alt="schema" width="2000px" height="550px">
           </div>
         </section>
 
@@ -436,7 +439,7 @@
             <li class="fragment" style="font-size: 32px;">In the Deduplication Action Item, create action fields.</li>
             <li class="fragment" style="font-size: 32px;">Add action name to Deduplication Action object Action types: picklist.</li>
             <li class="fragment" style="font-size: 32px;">If it is selected, then it will be taken with a custom metatype type by the name of the action class and the logic will be run on it.</li>
-            <li class="fragment" style="font-size: 32px;">Using the LWC extension, you can add your own tabs / pages to Application or dynamically render UI with json.</li>
+            <li class="fragment"style="font-size: 32px;">Using the LWC extension, you can add your own tabs / pages to Application or dynamically render UI with json.</li>
           </ul>
         </section>
 
