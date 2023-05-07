@@ -176,6 +176,7 @@
           </p>
           <section data-auto-animate>
             <ul>
+              <li>Limits by Package(Async/Sync);</li>
               <li>Search duplicates Acync;</li>
               <li>Search duplicates Sync;</li>
               <li>User-flow;</li>
@@ -192,13 +193,13 @@
               <li>User-flow;</li>
               <li>Search duplicates Acync;</li>
               <li>Search duplicates Sync;</li>
+              <li>Limits by Package(Async/Sync);</li>
             </ul>
           </section>
         </section>
 	
         <section>
           <h5>Object schema</h5>
-          <!-- TODO Add master detail field date of action completed -->
           <div>
               <img src="./assets/SCHEMA-OBJECT.png" alt="schema" width="2000px" height="550px">
           </div>
@@ -246,6 +247,13 @@
           <h5>Search duplicates Sync</h5>
           <div>
             <img src="./assets/search-duplicates-sync.png" alt="search-duplicates-sync" width="250px" height="600px">
+          </div>
+        </section>
+
+        <section>
+          <h5>Limits by Package Async/Sync</h5>
+          <div>
+            <a href="https://docs.google.com/spreadsheets/d/1KXcwwKoQc0JOc384er0Ml7q_7HsW73Lx4tMJ2lxlvow/edit#gid=0" target="_blank">Table</a>
           </div>
         </section>
 
@@ -437,21 +445,27 @@
         </section>
 
         <section>
-          <h5>Logger for logging Errors in process development</h5>
-          <div>
-            <img src="./assets/nebela-logger.png" alt="logger" height="200px">
-            <img src="./assets/logger.png" alt="logger-call" height="220px">
-          </div>
-          <a href="https://github.com/jongpie/NebulaLogger" style="font-size: 24px;">Nebula Logger for Salesforce</a>
+          <section>
+            <h5>Logger for logging Errors</h5>
+            <div>
+             <img src="./assets/loggly-logger.png" alt="logger" >
+            </div>
+            <a href="https://www.loggly.com/" style="font-size: 24px;" target="_blank">loggly</a>
+          </section>`
+          <section>
+            <div>
+              <img src="./assets/loggly-coast.png" alt="logger" >
+            </div>
+          </section>
         </section>
 
         <section>
           <h6>How to add new action(MVP-2)</h6>
           <ul>
-            <li class="fragment" style="font-size: 32px;">There is a custom meta type with mapping action name class.</li>
+            <li class="fragment" style="font-size: 32px;">There is a custom metadata type with mapping action name class.</li>
             <li class="fragment" style="font-size: 32px;">In the Deduplication Action Item, create action fields.</li>
             <li class="fragment" style="font-size: 32px;">Add action name to Deduplication Action object Action types: picklist.</li>
-            <li class="fragment" style="font-size: 32px;">If it is selected, then it will be taken with a custom metatype type by the name of the action class and the logic will be run on it.</li>
+            <li class="fragment" style="font-size: 32px;">If it is selected, then it will be taken with a custom metadata type by the name of the action class and the logic will be run on it.</li>
             <li class="fragment"style="font-size: 32px;">Using the LWC extension, you can add your own tabs / pages to Application or dynamically render UI with json (MVP-2).</li>
           </ul>
         </section>
